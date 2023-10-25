@@ -1,0 +1,20 @@
+{
+    "type": "record",
+    "name": "key",
+    "namespace": "node.yardmgmt.appointment.commands",
+    "doc": "when a dispose goodsholder command is received, the putaway capability determines the target location (if no outbound action is linked)\na task is planned and later started, or is directly started.  \nwhen the goodsholder is putaway the task is flagged as finished",
+    "fields": [
+        {
+            "name": "distributionCenterCd",
+            "type": {
+                "type": "enum",
+                "name": "distributionCenterCd",
+                "symbols": [
+                    "NODE_1064",
+                    "NODE_1065",
+                    "NODE_1067"
+                ]
+            }
+        }
+    ]
+}
